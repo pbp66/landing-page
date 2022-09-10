@@ -1,5 +1,7 @@
 :root {
     --dev-border-style: solid black;
+    --header-text-color: rgb(226, 214, 198);
+    --main-background-color: rgb(12, 32, 92);
 }
 
 /*= General Styling
@@ -8,11 +10,14 @@
 
 body {
     margin: 0px 30px 0px 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--header-text-color);
 }
 
 h1 {
     font-size: 2em;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -33,7 +38,13 @@ h1, h2 {
 
 header {
     display: flex;
-    border: var(--dev-border-style);
+    background-color: var(--main-background-color);
+    color: var(--header-text-color);
+}
+
+header a {
+    color: var(--header-text-color);
+    text-decoration: none;
 }
 
 /*= Profile Photo Styles
@@ -45,15 +56,16 @@ header {
     margin: 10px;
     overflow: hidden;
     border-radius: 50px;
-    border: solid black;
+    border: solid 3px;
     width: 150px;
     height: 150px;
+    flex: none;
 }
 
 #profile-photo img {
     width: 180px;
     height: 180px;
-    object-position: -20px -15px;
+    object-position: -10px -15px;
 }
 
 /*= Right Header Container
@@ -63,6 +75,7 @@ header {
 #right-header-container {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 /*= About Me Header
@@ -78,9 +91,9 @@ header {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 25px 10px 5px 0px;
+    padding: 25px 10px 5px 10px;
     justify-content: flex-end;
-    background-color: aqua;
+
 }
 
 #social-media {
@@ -89,7 +102,6 @@ header {
     width: 50%;
     text-transform: uppercase;
     justify-content: space-around;
-    background-color: lightgoldenrodyellow;
 }
 
 /*= Nav Bar
@@ -99,11 +111,11 @@ header {
 nav {
     text-transform:uppercase;
     display: flex;
-    padding: 10px 0px;
-    justify-content: space-around;
-    align-items: center;
+    padding: 10px 10px;
+    font-size: 17px;
+    justify-content: space-between;
+    align-items: flex-end;
     width: 100%;
-    background-color: aquamarine;
 }
 
 nav a, #social-media a {
