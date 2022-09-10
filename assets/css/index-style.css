@@ -2,6 +2,10 @@
     --dev-border-style: solid black;
 }
 
+/*= General Styling
+ * Applies general base styles to the site.
+ */
+
 body {
     margin: 0px 30px 0px 30px;
 }
@@ -15,10 +19,15 @@ h2 {
     font-size: 1.5em;
 }
 
+h1, h2 {
+    width: 100%;
+}
+
 /*= Header Styles
- * Header is comprised of several flex boxes to distribute the elements
- * The profile picture and the rest of the content are the top layer
- * 
+ * Header is comprised of several sub flex boxes to distribute the elements
+ * The top layer is split into two boxes: profile picture and the content on the right.
+ * The right flex box contains two more flex boxes: Nav Bar and About Me information
+ * The About Me information contains the last two flex boxes: about me content and external links pertaining to my career and interests.
 */
 
 
@@ -47,14 +56,18 @@ header {
     object-position: -20px -15px;
 }
 
-/*= 
- *
+/*= Right Header Container
+ * Contains two flex boxes to style the nav bar and the about me content.
  */
 
 #right-header-container {
     display: flex;
     flex-wrap: wrap;
 }
+
+/*= About Me Header
+ * This container separates the social media links and the brief about me section
+ */
 
 #about-me-header {
     display: flex;
@@ -79,9 +92,9 @@ header {
     background-color: lightgoldenrodyellow;
 }
 
-h1, h2 {
-    width: 100%;
-}
+/*= Nav Bar
+ * The nav bar contains links to other html sites: about me, featured, portfolio, and a form to contact me.
+ */
 
 nav {
     text-transform:uppercase;
@@ -93,12 +106,9 @@ nav {
     background-color: aquamarine;
 }
 
-
-
 nav a, #social-media a {
     padding: 5px;
     margin: 5px;
     display: inline-block;
     height: fit-content;
-    border: var(--dev-border-style);
 }
