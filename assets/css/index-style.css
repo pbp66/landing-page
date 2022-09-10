@@ -4,6 +4,21 @@ header {
     flex-wrap: wrap;
 }
 
+#profile-photo {
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 50px;
+    border: solid black;
+    width: 150px;
+    height: 150px;
+}
+
+#profile-photo img {
+    width: 180px;
+    height: 180px;
+    object-position: -9px -15px;
+}
+
 nav, #social-media {
     text-transform:uppercase;
 }
