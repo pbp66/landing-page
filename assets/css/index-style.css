@@ -1,7 +1,12 @@
+:root {
+    --dev-border-style: solid black;
+}
+
 header {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
+    align-items: flex-start;
+    border: var(--dev-border-style);
 }
 
 #profile-photo {
@@ -21,4 +26,34 @@ header {
 
 nav, #social-media {
     text-transform:uppercase;
+}
+
+nav {
+    display: inline-flex;
+    border: var(--dev-border-style);
+    margin: 10px;
+    height: fit-content;
+    width: ;
+}
+
+nav a {
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    border: var(--dev-border-style);
+    height: fit-content;
+}
+
+#header-text {
+    border: var(--dev-border-style);
+    margin: 10px;
+    height: fit-content;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+h2 {
+    font-size: 1.5em;
 }
