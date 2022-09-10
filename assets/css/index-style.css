@@ -2,12 +2,35 @@
     --dev-border-style: solid black;
 }
 
+body {
+    margin: 0px 30px 0px 30px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+/*= Header Styles
+ * Header is comprised of several flex boxes to distribute the elements
+ * The profile picture and the rest of the content are the top layer
+ * 
+*/
+
+
 header {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
     border: var(--dev-border-style);
 }
+
+/*= Profile Photo Styles
+ * #profile-photo styles apply to the container for the image
+ * #profile-phot img styles apply to the image itself
+ */
 
 #profile-photo {
     margin: 10px;
@@ -21,39 +44,61 @@ header {
 #profile-photo img {
     width: 180px;
     height: 180px;
-    object-position: -9px -15px;
+    object-position: -20px -15px;
 }
 
-nav, #social-media {
-    text-transform:uppercase;
+/*= 
+ *
+ */
+
+#right-header-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-nav {
-    display: inline-flex;
-    border: var(--dev-border-style);
-    margin: 10px;
-    height: fit-content;
-    width: ;
-}
-
-nav a {
-    padding: 5px;
-    margin: 5px;
-    display: inline-block;
-    border: var(--dev-border-style);
-    height: fit-content;
+#about-me-header {
+    display: flex;
+    width: 100%;
 }
 
 #header-text {
-    border: var(--dev-border-style);
-    margin: 10px;
-    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 25px 10px 5px 0px;
+    justify-content: flex-end;
+    background-color: aqua;
 }
 
-h1 {
-    font-size: 2em;
-    font-weight: 700;
+#social-media {
+    display: flex;
+    padding: 5px;
+    width: 50%;
+    text-transform: uppercase;
+    justify-content: space-around;
+    background-color: lightgoldenrodyellow;
 }
-h2 {
-    font-size: 1.5em;
+
+h1, h2 {
+    width: 100%;
+}
+
+nav {
+    text-transform:uppercase;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+
+
+nav a, #social-media a {
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    height: fit-content;
+    border: var(--dev-border-style);
 }
