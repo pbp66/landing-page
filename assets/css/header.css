@@ -160,10 +160,9 @@ form label, form input  {
 
 footer {
     margin: 0px;
-    margin-top: 50px;
     height: 3rem;
 
-    position: absolute;
+    position: sticky;
     bottom: 0;
 
     justify-content: center;
@@ -246,5 +245,9 @@ footer {
 
     #about-me-video video {
         width: 90vw;
+    }
+
+    #footer-container {
+        width: 100%;
     }
 }

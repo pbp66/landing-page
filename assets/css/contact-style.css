@@ -8,11 +8,12 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--header-text-color);
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
 }
 
 main {
-    margin-bottom: 50px;
+    min-height: 100%;
+    margin-bottom: 3rem;
 }
 
 main form {
@@ -20,7 +21,6 @@ main form {
     flex-flow: column wrap;
     justify-content: flex-start;
     color: var(--main-background-color);
-    flex: 1;
 }
 
 #contact-info {
@@ -28,13 +28,11 @@ main form {
     flex-flow: column wrap;
     align-content: flex-start;
     width: 100%;
-    flex: 1;
 }
 
 #contact-info label {
     display: flex;
     width: 100%;
-    flex: 1;
     align-items: center;
     justify-items: stretch;
 }
@@ -53,7 +51,6 @@ main form {
 #reason {
     display: flex;
     flex-flow: column;
-    flex: 1;
     margin: 20px 0px;
 }
 
