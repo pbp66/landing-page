@@ -2,6 +2,7 @@
     --dev-border-style: solid black;
     --header-text-color: rgb(226, 214, 198);
     --main-background-color: rgb(12, 32, 92);
+    --footer-height: 9rem;
 }
 
 body {
@@ -12,8 +13,7 @@ body {
 }
 
 main {
-    min-height: 100%;
-    margin-bottom: 3rem;
+    height: 100%;
 }
 
 main form {
@@ -22,6 +22,15 @@ main form {
     justify-content: flex-start;
     color: var(--main-background-color);
 }
+
+form {
+    margin: 15px;
+}
+
+form label, form input  {
+    margin: 5px;
+}
+
 
 #contact-info {
     display: flex;

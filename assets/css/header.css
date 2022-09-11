@@ -2,6 +2,7 @@
     --dev-border-style: solid black;
     --header-text-color: rgb(226, 214, 198);
     --main-background-color: rgb(12, 32, 92);
+    --footer-height: 9rem;
 }
 
 /*= Header Styles
@@ -86,7 +87,6 @@ flex-grow: 1;
 #about-me-header {
     display: flex;
     flex-flow: wrap;
-    flex: 1;
 }
 
 #header-text {
@@ -96,7 +96,6 @@ flex-grow: 1;
     margin-top: 40px;
     padding: 0px 10px 5px 10px;
     justify-content: flex-end;
-    flex: 1;
 }
 
 #header-text h3 {
@@ -146,28 +145,21 @@ main {
     align-content: center;
 }
 
-form {
-    margin: 15px;
-}
-
-form label, form input  {
-    margin: 5px;
-}
-
 /*= Footer Content Styles
 *
 */
 
 footer {
+    background-image: linear-gradient(var(--header-text-color),var(--main-background-color));
+    
     margin: 0px;
-    height: 3rem;
+    height: var(--footer-height);
 
     position: sticky;
     bottom: 0;
 
     justify-content: center;
     align-items: center;
-    flex: 1;
     width: 100%;
 }
 
