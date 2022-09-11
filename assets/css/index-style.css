@@ -2,7 +2,6 @@
     --dev-border-style: solid black;
     --header-text-color: rgb(226, 214, 198);
     --main-background-color: rgb(12, 32, 92);
-    --default-margin-length: 50px;
     --body-flexbox-width: calc(100% - calc(2*var(--default-margin-length)))
 }
 
@@ -11,12 +10,10 @@
  */
 
 body {
-    margin: 0px var(--default-margin-length);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--header-text-color);
     display: flex;
     flex-flow: column wrap;
-    width: var(--body-flexbox-width);
 }
 
 h1 {
@@ -33,6 +30,12 @@ h1, h3 {
     width: 100%;
 }
 
+header, footer {
+    display: flex;
+    background-color: var(--main-background-color);
+    color: var(--header-text-color);
+}
+
 /*= Header Styles
  * Header is comprised of several sub flex boxes to distribute the elements
  * The top layer is split into two boxes: profile picture and the content on the right.
@@ -40,11 +43,8 @@ h1, h3 {
  * The About Me information contains the last two flex boxes: about me content and external links pertaining to my career and interests.
 */
 
-
-header, footer {
-    display: flex;
-    background-color: var(--main-background-color);
-    color: var(--header-text-color);
+header {
+    justify-content: center;
 }
 
 header a {
@@ -55,16 +55,24 @@ header a {
 /*= Profile Photo Styles
  * #profile-photo styles apply to the container for the image
  * #profile-phot img styles apply to the image itself
+ * The before pseudo elements creates a flex box that grow to keep the header content centered in the page regardless of browser window size. Works in conjunction with #right-header-container::after.
  */
 
+#profile-photo::before {
+    flex-grow:1;
+}
+
 #profile-photo {
-    margin: 10px;
+    /* margin: 10px;
+    margin: 0px var(--default-margin-length); */
+    margin: 10px 10px 10px 0px;
     overflow: hidden;
     border-radius: 50px;
     border: solid 3px;
     width: 150px;
     height: 150px;
     flex: none;
+    justify-content: flex-end;
 }
 
 #profile-photo img {
@@ -75,11 +83,20 @@ header a {
 
 /*= Right Header Container
  * Contains two flex boxes to style the nav bar and the about me content.
+ * The after pseudo elements creates a flex box that grow to keep the header content centered in the page regardless of browser window size. Works in conjunction with #profile-photo::before.
  */
+
+ /* #right-header-container::before {
+    flex-grow: 1;
+} */
 
 #right-header-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-content: stretch;
+}
+
+#right-header-container::after {
     flex-grow: 1;
 }
 
@@ -89,15 +106,18 @@ header a {
 
 #about-me-header {
     display: flex;
-    width: 100%;
+    flex-flow: wrap;
+    flex: 1;
 }
 
 #header-text {
+    /* margin-top: 35px; */
     display: flex;
     flex-direction: column;
-    width: 50%;
+    margin-top: 40px;
     padding: 0px 10px 5px 10px;
     justify-content: flex-end;
+    flex: 1;
 }
 
 #header-text h3 {
@@ -107,9 +127,9 @@ header a {
 #social-media {
     display: flex;
     padding: 5px;
-    width: 50%;
+    flex-wrap: wrap;
     text-transform: uppercase;
-    justify-content: space-around;
+    width: fit-content;
 }
 
 /*= Nav Bar
@@ -118,12 +138,16 @@ header a {
 
 nav {
     text-transform:uppercase;
-    display: flex;
-    margin-bottom: 10px;
     font-size: 17px;
+
+    display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    height: fit-content;
     width: 100%;
+    align-self: flex-end;
+    flex: 1;
 }
 
 nav a:hover {
@@ -131,8 +155,7 @@ nav a:hover {
 }
 
 nav a, #social-media a {
-    padding: 5px;
-    margin: 5px;
+    padding: 10px 5px 10px 5px;
     display: inline-block;
     height: fit-content;
 }
@@ -154,15 +177,20 @@ nav a, #social-media a {
     height: 350px;
  }
 
+/*= Footer Content Styles
+ *
+ */
+
  footer {
+    margin: 0px;
+    margin-top: 50px;
+    height: 3rem;
+
     position: absolute;
     bottom: 0;
-    display: flex;
+
     justify-content: center;
     align-items: center;
     flex: 1;
-    margin-top: 50px;
-    height: 3rem;
-    width: var(--body-flexbox-width);
-    text-align: center;
+    width: 100%;
  }
