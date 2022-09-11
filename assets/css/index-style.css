@@ -202,13 +202,8 @@ footer {
 
 }
 
-/* Large smartphones */
-@media screen and (max-width: 768px) {
-
-}
-
-/* Small smartphones */
-@media screen and (max-width: 576px) {
+/* For large and small smartphones */
+@media screen and (max-width: 768px), screen and (max-width: 576px) {
     * {
         align-items: center;
         align-content: center;
@@ -227,6 +222,7 @@ footer {
     }
 
     #profile-photo {
+        /* TODO: Make picture and nav bar relative to each other. All element should move down if the nav bar wraps itself. I may need to make another media query if the nav bar reaches a certain pixel width*/
         top: 27px;
         flex-flow: column wrap;
         margin: 0px;
