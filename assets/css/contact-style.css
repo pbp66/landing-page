@@ -1,0 +1,25 @@
+:root {
+    --dev-border-style: solid black;
+    --header-text-color: rgb(226, 214, 198);
+    --main-background-color: rgb(12, 32, 92);
+}
+
+header, footer {
+    display: flex;
+    background-color: var(--main-background-color);
+    color: var(--header-text-color);
+}
+
+footer {
+    margin: 0px;
+    margin-top: 50px;
+    height: 3rem;
+
+    position: absolute;
+    bottom: 0;
+
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
