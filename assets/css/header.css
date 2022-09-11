@@ -249,9 +249,4 @@ footer {
     #about-me-video video {
         width: 90vw;
     }
-
-    footer {
-        position: absolute;
-        bottom: 0;
-    }
 }
