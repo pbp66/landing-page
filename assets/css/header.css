@@ -186,11 +186,6 @@ footer {
     * {
         align-items: center;
         align-content: center;
-        position: relative;
-    }
-    
-    body {
-        position: relative;
     }
 
     header {   
@@ -201,6 +196,7 @@ footer {
 
     #profile-photo {
         /* TODO: Make picture and nav bar relative to each other. All element should move down if the nav bar wraps itself. I may need to make another media query if the nav bar reaches a certain pixel width*/
+        position: relative;
         top: 27px;
         flex-flow: column wrap;
         margin: 0px;
@@ -219,12 +215,14 @@ footer {
     }
 
     #header-text {
+        position: relative;
         flex-flow: column wrap;
         text-align: center;
         top: -45px;
     }
 
     #social-media {
+        position: relative;
         top: -50px;
         flex-flow: row wrap;
         justify-content: space-around;
