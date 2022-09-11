@@ -10,3 +10,69 @@ body {
     display: flex;
     flex-flow: column wrap;
 }
+
+main form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    color: var(--main-background-color);
+}
+
+#contact-info {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#contact-info label {
+    display: flex;
+    align-items: center;
+}
+
+#contact-info input {
+    font-size: 1.5rem;
+
+    border: solid var(--main-background-color);
+    border-width: 2px;
+    background-color: transparent;
+}
+
+#phone-number {
+    width: 10.5rem;
+}
+
+#reason {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
+    margin: 20px 0px;
+}
+
+#reason label {
+    padding: 0px 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#reason h3 {
+    margin-bottom: 10px;
+}
+
+#reason label p {
+    padding: 0px 15px;
+}
+
+label[for="comment-box"] {
+    display: flex;
+    flex-flow: column;
+}
+
+#comment-box {
+    vertical-align: text-top;
+    max-width: 500px;
+    min-height: 200px;
+}
+
+#buttons {
+    display: inline-flex;
+}
