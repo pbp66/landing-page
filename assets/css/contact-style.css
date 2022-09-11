@@ -16,6 +16,7 @@ main form {
     flex-flow: column wrap;
     justify-content: flex-start;
     color: var(--main-background-color);
+    border: var(--dev-border-style);
 }
 
 #contact-info {
@@ -30,13 +31,13 @@ main form {
 
 #contact-info input {
     font-size: 1.5rem;
-
-    border: solid var(--main-background-color);
-    border-width: 2px;
-    background-color: transparent;
+    border: solid transparent;
+    border-radius: 10px;
+    flex: 1;
 }
 
 #phone-number {
+    flex: none;
     width: 10.5rem;
 }
 
@@ -55,6 +56,8 @@ main form {
 }
 
 #reason h3 {
+    text-align: center;
+    word-wrap: break-word;
     margin-bottom: 10px;
 }
 
@@ -68,11 +71,20 @@ label[for="comment-box"] {
 }
 
 #comment-box {
-    vertical-align: text-top;
-    max-width: 500px;
+    flex: 1;
     min-height: 200px;
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
 }
 
-#buttons {
-    display: inline-flex;
+#buttons input {
+    display: inline;
+    border: transparent;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    color: var(--header-text-color);
+    background-color: var(--main-background-color);
 }
