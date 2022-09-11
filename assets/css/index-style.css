@@ -15,148 +15,11 @@ body {
     flex-flow: column wrap;
 }
 
-h1 {
-    font-size: 2em;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 1.17em;
-}
-
 h1, h3 {
     width: 100%;
 }
 
-header, footer {
-    display: flex;
-    background-color: var(--main-background-color);
-    color: var(--header-text-color);
-}
-
-/*= Header Styles
-* Header is comprised of several sub flex boxes to distribute the elements
-* The top layer is split into two boxes: profile picture and the content on the right.
-* The right flex box contains two more flex boxes: Nav Bar and About Me information
-* The About Me information contains the last two flex boxes: about me content and external links pertaining to my career and interests.
-*/
-
-header {
-    justify-content: center;
-}
-
-header a {
-    color: var(--header-text-color);
-    text-decoration: none;
-}
-
-/*= Profile Photo Styles
-* #profile-photo styles apply to the container for the image
-* #profile-phot img styles apply to the image itself
-* The before pseudo elements creates a flex box that grow to keep the header content centered in the page regardless of browser window size. Works in conjunction with #right-header-container::after.
-*/
-
-#profile-photo::before {
-    flex-grow:1;
-}
-
-#profile-photo {
-    margin: 10px 10px 10px 0px;
-    overflow: hidden;
-    border-radius: 50px;
-    border: solid 3px;
-    width: 150px;
-    height: 150px;
-    flex: none;
-    justify-content: flex-end;
-}
-
-#profile-photo img {
-    width: 180px;
-    height: 180px;
-    object-position: -10px -15px;
-}
-
-/*= Right Header Container
-* Contains two flex boxes to style the nav bar and the about me content.
-* The after pseudo elements creates a flex box that grow to keep the header content centered in the page regardless of browser window size. Works in conjunction with #profile-photo::before.
-*/
-
-/* #right-header-container::before {
-flex-grow: 1;
-} */
-
-#right-header-container {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: stretch;
-}
-
-#right-header-container::after {
-    flex-grow: 1;
-}
-
-/*= About Me Header
-* This container separates the social media links and the brief about me section
-*/
-
-#about-me-header {
-    display: flex;
-    flex-flow: wrap;
-    flex: 1;
-}
-
-#header-text {
-/* margin-top: 35px; */
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    padding: 0px 10px 5px 10px;
-    justify-content: flex-end;
-    flex: 1;
-}
-
-#header-text h3 {
-    margin-top: 10px;
-}
-
-#social-media {
-    display: flex;
-    padding: 5px;
-    flex-wrap: wrap;
-    text-transform: uppercase;
-    width: fit-content;
-}
-
-/*= Nav Bar
-* The nav bar contains links to other html sites: about me, featured, portfolio, and a form to contact me.
-*/
-
-nav {
-    text-transform:uppercase;
-    font-size: 17px;
-    margin-bottom: 2px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-
-    height: fit-content;
-    width: 100%;
-    align-self: flex-end;
-    flex: 1;
-}
-
-nav a:hover {
-    color: #e4b2a1;
-}
-
-nav a, #social-media a {
-    padding: 10px 5px 10px 5px;
-    display: inline-block;
-    height: fit-content;
-}
+/* Main Header Styles are included in header.css */
 
 /*= Main Content Styles
 *
@@ -173,24 +36,6 @@ main {
     border: var(--dev-border-style);
     width: 750px;
     height: 350px;
-}
-
-/*= Footer Content Styles
-*
-*/
-
-footer {
-    margin: 0px;
-    margin-top: 50px;
-    height: 3rem;
-
-    position: absolute;
-    bottom: 0;
-
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    width: 100%;
 }
 
 /*= Media Queries
