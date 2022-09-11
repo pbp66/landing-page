@@ -2,6 +2,8 @@
     --dev-border-style: solid black;
     --header-text-color: rgb(226, 214, 198);
     --main-background-color: rgb(12, 32, 92);
+    --default-margin-length: 50px;
+    --body-flexbox-width: calc(100% - calc(2*var(--default-margin-length)))
 }
 
 /*= General Styling
@@ -9,9 +11,12 @@
  */
 
 body {
-    margin: 0px 30px 0px 30px;
+    margin: 0px var(--default-margin-length);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: var(--header-text-color);
+    display: flex;
+    flex-flow: column wrap;
+    width: var(--body-flexbox-width);
 }
 
 h1 {
@@ -36,7 +41,7 @@ h1, h3 {
 */
 
 
-header {
+header, footer {
     display: flex;
     background-color: var(--main-background-color);
     color: var(--header-text-color);
@@ -127,3 +132,33 @@ nav a, #social-media a {
     display: inline-block;
     height: fit-content;
 }
+
+/*= Main Content Styles
+ *
+ */
+
+ main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+ }
+
+ #slide-show {
+    margin: 50px 0px;
+    border: var(--dev-border-style);
+    width: 750px;
+    height: 350px;
+ }
+
+ footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 50px;
+    height: 3rem;
+    width: var(--body-flexbox-width);
+    text-align: center;
+ }
