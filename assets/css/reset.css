@@ -61,3 +61,7 @@ h1 {
 h3 {
     font-size: 1.17em;
 }
+
+html, body {
+	height: 100%;
+}
