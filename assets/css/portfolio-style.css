@@ -9,19 +9,21 @@
 
 body {
     overflow: scroll;
+    height: 100%;
 }
 
 main {
     display: flex;
     flex-flow: column;
     align-items: center;
+    flex-grow: 1;
 }
 
 main article {
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-    margin-top: 20px;
+    margin: 10px 0px;
 }
 
 article h3 {
@@ -37,8 +39,8 @@ article h3 {
     height: auto;
 }
 
-.project-display:hover {
-
+#horiseon-refactor-container {
+    margin-top: 20px;
 }
 
 .image-container {
@@ -96,5 +98,5 @@ article h3 {
 }
 
 #footer-container {
-    justify-self: flex-end;
+    position: relative;
 }
