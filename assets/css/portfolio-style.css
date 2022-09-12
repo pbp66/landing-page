@@ -7,15 +7,20 @@
     --max-width: 838px;
 }
 
+body {
+    overflow: scroll;
+}
+
 main {
-    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 main article {
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
-
     margin-top: 20px;
 }
 
@@ -25,9 +30,12 @@ article h3 {
 }
 
 .project-display {
+    display: flex;
+    flex-flow: column;
     align-items: center;
     width: var(--max-width);
-    height: 500px;
+    height: auto;
+    border: var(--dev-border-style);
 }
 
 .project-display:hover {
@@ -36,7 +44,7 @@ article h3 {
 
 .image-container {
     position: relative;
-    height: auto;
+    height: 500px;
     width: auto;
 
     max-width: var(--max-width);
@@ -45,7 +53,7 @@ article h3 {
 
 .tooltip {
     position: absolute;
-    bottom: 0px;
+    top: 0px;
     left: 50%;
     transform: translate(-50%, 0%);
 
@@ -76,4 +84,8 @@ article h3 {
 
 #placeholder:hover span {
     visibility: visible;
+}
+
+#footer-container {
+    justify-self: flex-end;
 }
