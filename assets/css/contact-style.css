@@ -6,13 +6,6 @@
     --accent-color: #e99274;
 }
 
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--header-text-color);
-    display: flex;
-    flex-flow: column;
-}
-
 main {
     height: 100%;
 }

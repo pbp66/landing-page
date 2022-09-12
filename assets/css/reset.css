@@ -3,6 +3,14 @@
    License: none (public domain)
 */
 
+:root {
+    --dev-border-style: solid black;
+    --header-text-color: rgb(226, 214, 198);
+    --main-background-color: rgb(12, 32, 92);
+    --footer-height: 9rem;
+    --accent-color: #e99274;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,6 +40,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--header-text-color);
+    display: flex;
+    flex-flow: column;
 }
 
 ol, ul {
