@@ -3,13 +3,15 @@
     --header-text-color: rgb(226, 214, 198);
     --main-background-color: rgb(12, 32, 92);
     --footer-height: 9rem;
+    --accent-color: #e99274;
+    --max-width: 838px;
 }
 
 /*= General Styling
 * Applies general base styles to the site.
 */
 
-h1, h3 {
+#header-text h1, #header-text h3 {
     width: 100%;
 }
 
@@ -27,17 +29,80 @@ main article {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
+    margin: 10px 0px;
     max-width: 838px;
 }
 
-#slide-show {
-    margin: 50px 0px;
-    border: var(--dev-border-style);
-    width: 750px;
-    height: 350px;
+article h3 {
+    color: var(--main-background-color);
+    padding: 5px;
 }
 
-video {
-    width: 100%;
-    height: 350px;
+.project-display {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: var(--max-width);
+    height: auto;
+}
+
+#horiseon-refactor-container {
+    margin-top: 20px;
+}
+
+.image-container {
+    position: relative;
+    height: 500px;
+    width: auto;
+
+    max-width: var(--max-width);
+    overflow: scroll;
+}
+
+.tooltip {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: fit-content;
+    max-width: var(--max-width);
+
+    box-sizing: border-box;
+    padding: 5px;
+    border: solid 5px var(--main-background-color);
+    color: var(--main-background-color);
+    background-color: var(--header-text-color);
+
+    visibility: hidden;
+}
+
+.project-screenshot {
+    max-width: var(--max-width);
+    height: auto;
+}
+
+.project-description {
+    margin-top: 5px;
+    padding: 5px;
+    border: solid 2px var(--main-background-color);
+}
+
+.project-description p {
+    margin-bottom: 5px;
+}
+
+#horiseon-refactor:hover span {
+    visibility: visible;
+}
+
+#placeholder-container {
+    text-transform: capitalize;
+}
+
+#placeholder:hover span {
+    visibility: visible;
 }
