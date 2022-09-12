@@ -19,6 +19,7 @@ main form {
 
 form {
     margin: 15px;
+    max-width: 838px;
 }
 
 form label, form input  {
@@ -113,6 +114,10 @@ input:focus, textarea:focus {
     background-color: var(--accent-color);
     color: black;
 }
+
+/*= Media Queries
+* For large and small smartphones
+*/
 
 @media screen and (max-width: 768px), screen and (max-width: 576px) {
     main *{

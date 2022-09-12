@@ -27,6 +27,7 @@ main article {
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
+    max-width: 838px;
 }
 
 #slide-show {
