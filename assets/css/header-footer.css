@@ -35,7 +35,7 @@ h1 {
     text-transform: uppercase;
 }
 
-a:hover {
+ a:hover {
     color: var(--accent-color);
 }
 
