@@ -3,6 +3,7 @@
     --header-text-color: rgb(226, 214, 198);
     --main-background-color: rgb(12, 32, 92);
     --footer-height: 9rem;
+    --accent-color: #e99274;
 }
 
 /*= Header Styles
@@ -32,6 +33,10 @@ header a {
 
 h1 {
     text-transform: uppercase;
+}
+
+a:hover {
+    color: var(--accent-color);
 }
 
 /*= Profile Photo Styles
@@ -127,10 +132,6 @@ nav {
     width: 100%;
     align-self: flex-end;
     flex: 1;
-}
-
-nav a:hover {
-    color: #e4b2a1;
 }
 
 nav a, #social-media a {
