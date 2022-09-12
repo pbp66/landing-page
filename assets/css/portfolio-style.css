@@ -13,22 +13,24 @@ main {
 main article {
     display: flex;
     flex-flow: column;
-    justify-content: flex-end;
-    color: var(--main-background-color);
+    justify-content: flex-start;
+
+    margin-top: 20px;
 }
 
 article h3 {
     color: var(--main-background-color);
 }
 
-
 .project-display {
-    border: solid 5px var(--main-background-color);
-    width: 100%;
+    align-items: center;
+    border: solid 2px var(--main-background-color);
+    width: 50%;
+    max-width: 838px;
 }
 
-#placeholder {
-    text-transform: capitalize;
+.image-container {
+
 }
 
 .project-screenshot {
@@ -39,4 +41,8 @@ article h3 {
 .project-screenshot:hover {
     box-sizing: border-box;
     border: solid 2px var(--accent-color);
+}
+
+#placeholder {
+    text-transform: capitalize;
 }
