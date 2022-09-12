@@ -60,6 +60,10 @@ a:hover {
     justify-content: flex-end;
 }
 
+#profile-photo:hover {
+    border: solid 3px var(--accent-color);
+}
+
 #profile-photo img {
     width: 180px;
     height: 180px;

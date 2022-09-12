@@ -3,6 +3,7 @@
     --header-text-color: rgb(226, 214, 198);
     --main-background-color: rgb(12, 32, 92);
     --footer-height: 9rem;
+    --accent-color: #e99274;
 }
 
 body {
@@ -31,6 +32,11 @@ form label, form input  {
     margin: 5px;
 }
 
+input, textarea {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
 
 #contact-info {
     display: flex;
@@ -48,7 +54,6 @@ form label, form input  {
 
 #contact-info input {  
     font-size: 1.5rem;
-    border: solid transparent;
     border-radius: 10px;
 }
 
@@ -87,7 +92,6 @@ label[for="comment-box"] {
 #comment-box {
     min-height: 200px;
     min-width: 700px;
-    border: transparent;
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
@@ -98,15 +102,23 @@ label[for="comment-box"] {
 }
 
 #buttons input {
-    border: transparent;
     border-radius: 10px;
-
+    border: transparent;
     padding: 15px;
     margin: 5px;
 
     font-size: 1.2rem;
     color: var(--header-text-color);
     background-color: var(--main-background-color);
+}
+
+input:focus, textarea:focus {
+    border: 2px solid var(--accent-color);
+}
+
+#buttons input:hover {
+    background-color: var(--accent-color);
+    color: black;
 }
 
 @media screen and (max-width: 768px), screen and (max-width: 576px) {
