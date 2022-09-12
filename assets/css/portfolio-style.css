@@ -35,7 +35,6 @@ article h3 {
     align-items: center;
     width: var(--max-width);
     height: auto;
-    border: var(--dev-border-style);
 }
 
 .project-display:hover {
@@ -72,6 +71,17 @@ article h3 {
 .project-screenshot {
     max-width: var(--max-width);
     height: auto;
+}
+
+.project-description {
+    margin-top: 5px;
+    padding: 5px;
+    border: solid 2px var(--main-background-color);
+}
+
+.project-description p {
+    margin-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #horiseon-refactor:hover span {
