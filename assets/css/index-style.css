@@ -20,7 +20,7 @@ h1, h3 {
 */
 
 main {
-    height: 100%;
+    flex: 1;
 }
 
 main article {

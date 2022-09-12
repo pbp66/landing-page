@@ -44,6 +44,7 @@ body {
     background-color: var(--header-text-color);
     display: flex;
     flex-flow: column;
+	overflow: scroll;
 }
 
 ol, ul {
