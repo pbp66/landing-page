@@ -6,7 +6,7 @@
     --accent-color: #e99274;
 }
 
-h3 {
+article h3 {
     color: var(--main-background-color);
 }
 
