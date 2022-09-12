@@ -50,6 +50,9 @@ article h3 {
     left: 50%;
     transform: translate(-50%, 0%);
 
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     width: fit-content;
     max-width: var(--max-width);
 
