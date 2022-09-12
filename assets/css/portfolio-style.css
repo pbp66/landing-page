@@ -6,12 +6,25 @@
     --accent-color: #e99274;
 }
 
+main {
+    height: 100%;
+}
+
+main article {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    color: var(--main-background-color);
+}
+
 article h3 {
     color: var(--main-background-color);
 }
 
+
 .project-display {
     border: solid 5px var(--main-background-color);
+    width: 100%;
 }
 
 #placeholder {
