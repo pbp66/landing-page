@@ -41,11 +41,13 @@ article h3 {
 }
 
 .project-display {
+    position: relative;
     display: flex;
     flex-flow: column;
     align-items: center;
     width: var(--max-width);
     height: auto;
+    z-index: 10;
 }
 
 #about-me p {
@@ -109,8 +111,6 @@ article h3 {
 .project-description p {
     margin-bottom: 5px;
 }
-
-
 
 #horiseon-refactor:hover span {
     visibility: visible;
