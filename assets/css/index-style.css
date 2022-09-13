@@ -46,6 +46,11 @@ article h3 {
     height: auto;
 }
 
+#about-me p {
+    margin: 5px;
+    line-height: 1.3;
+}
+
 #horiseon-refactor-container {
     margin-top: 20px;
 }
