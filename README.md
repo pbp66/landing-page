@@ -10,7 +10,7 @@ This project challenged me to work with flexbox layouts and stress how to use th
 
 ## Installation
 
-There is nothing to install with this project. To see the final product, please visit this webpage: []()
+There is nothing to install with this project. To see the final product, please visit this webpage: [https://pbp66.github.io/landing-page/](https://pbp66.github.io/landing-page/)
 
 ## Usage
 Using the link above, view the website and use developer tools to explore the structure and styles of the website. The About Me and Portfolio navigation items will navigate on the main page. The Contact Me navigation item will take you to a form to fill out. Lastly, you can click my profile picture to be redirected to the home page.
@@ -19,11 +19,8 @@ Using the link above, view the website and use developer tools to explore the st
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+W3 Schools and StackOverflow were used to explore and learn about HTML elements not covered in class.
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
 
 ## License
 
