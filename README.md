@@ -15,12 +15,15 @@ There is nothing to install with this project. To see the final product, please 
 ## Usage
 Using the link above, view the website and use developer tools to explore the structure and styles of the website. The About Me and Portfolio navigation items will navigate on the main page. The Contact Me navigation item will take you to a form to fill out. Lastly, you can click my profile picture to be redirected to the home page.
 
-![Screenshot of James Perry's Portfolio Site](assets/images/screenshot.png)
+![Screenshot of James Perry's Portfolio Site](assets/images/screenshot.png|width=200)
 
 ## Credits
 
 W3 Schools and StackOverflow were used to explore and learn about HTML elements not covered in class.
 
+I looked at [https://coreyms.com/](https://coreyms.com/) for inspiration when creating my portfolio site.
+
+Here is the source for my reset.css file: [http://meyerweb.com/eric/tools/css/reset/](http://meyerweb.com/eric/tools/css/reset/) v2.0 | 20110126 License: none (public domain)
 
 ## License
 
@@ -30,12 +33,6 @@ The last section of a high-quality README file is the license. This lets other d
 
 🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
 
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
 ## Features
 
 If your project has a lot of features, list them here.
@@ -43,7 +40,3 @@ If your project has a lot of features, list them here.
 ## How to Contribute
 
 If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
