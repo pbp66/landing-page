@@ -26,17 +26,8 @@ I looked at [https://coreyms.com/](https://coreyms.com/) for inspiration when cr
 Here is the source for my reset.css file: [http://meyerweb.com/eric/tools/css/reset/](http://meyerweb.com/eric/tools/css/reset/) v2.0 | 20110126 License: none (public domain)
 
 ## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Features
-
-If your project has a lot of features, list them here.
+MIT License Copyright (c) 2022
 
 ## How to Contribute
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+If you find a bug on my site or have a suggestion, please create an issue on the repo, or use my contact form on the website!
