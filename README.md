@@ -15,7 +15,7 @@ There is nothing to install with this project. To see the final product, please 
 ## Usage
 Using the link above, view the website and use developer tools to explore the structure and styles of the website. The About Me and Portfolio navigation items will navigate on the main page. The Contact Me navigation item will take you to a form to fill out. Lastly, you can click my profile picture to be redirected to the home page.
 
-![Screenshot of James Perry's Portfolio Site](./assets/images/screenshot.png|width=200)
+![Screenshot of James Perry's Portfolio Site](./assets/images/landing-page-screenshot.png|width=200)
 
 ## Credits
 
