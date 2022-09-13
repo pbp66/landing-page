@@ -8,28 +8,14 @@ Acceptance Criteria: Given a potential employee's previous work, when I load the
 
 This project challenged me to work with flexbox layouts and stress how to use them to my advantage. I learned quite a bit on how multiple layers of flexboxes interact with each other. I spent a significant amount of time getting the header and footer to be accurately positioned whenever the webpage was resized. The combination of pseudo classes and elements added depth to the website providing display options I hadn't considered previously (hovering, flexboxes in the pseudo elemets, etc.). I really enjoyed the challenged of creating a website from scratch and challenging my knowledge and understanding of advanced CSS elements. 
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+There is nothing to install with this project. To see the final product, please visit this webpage: []()
 
 ## Usage
+Using the link above, view the website and use developer tools to explore the structure and styles of the website. The About Me and Portfolio navigation items will navigate on the main page. The Contact Me navigation item will take you to a form to fill out. Lastly, you can click my profile picture to be redirected to the home page.
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![Screenshot of James Perry's Portfolio Site](assets/images/screenshot.png)
 
 ## Credits
 
